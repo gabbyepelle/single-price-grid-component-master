@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow:hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --lighter-cyan:#4abebd;
+    --font: 'Karla', sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+body{
+    font-family: var(--font);
+    background: var(--light-gray);
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.left, .right, .top{
+    padding: 1rem 1.2rem 1.2rem 1.5rem;
+}
+
+.top{
+    background-color: white;
+    color: var(--grayish-blue);
+}
+.info{
+    line-height:2;
+}
+
+.left{
+    background-color:var(--cyan);
+    color: white;
+    padding-bottom: 1.7rem;
+}
+
+.left span:first-of-type{
+    font-size: 2rem;
+    margin-right: 0.4rem;
+}
+
+.left span:last-of-type{
+    color:#e6ffff;
+
+}
+
+.left button{
+    border: none;
+    color: white;
+    background-color: var(--bright-yellow);
+    margin-top: 0.8rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 25px 20px -20px;
+}
+
+.right{
+    background-color:var(--lighter-cyan);
+    color: white;
+}
+
+.right ul{
+    list-style: none;
+    line-height: 1.4;
+    color:#e6ffff;
+}
+
+h1{
+    font-size: 1.5rem;
+    color: var(--cyan);
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+.sub{
+    font-size: 1.3rem;
+    color: var(--bright-yellow);
+}
+
+@media screen and (min-width: 475px){
+    .container{
+        max-width: 700px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "t t"
+        "l r";
+    }
+
+    
+
+    .top{
+        grid-area: t;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .top p{
+        margin: 0.5rem;
+    }
+
+    .left{
+        grid-area: l;
+    }
+
+    .right{
+        grid-area: r;
+    }
+
+}
