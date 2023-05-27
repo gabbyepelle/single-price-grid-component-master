@@ -60,10 +60,10 @@ main{
     color: white;
     background-color: var(--bright-yellow);
     margin-top: 0.8rem;
-    width: 100%;
-    padding: 1rem;
+    width: 90%;
+    padding: 1.2rem 1rem;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 25px 20px -20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 20px -20px;
 }
 
 .right{
@@ -123,4 +123,7 @@ h2{
         grid-area: r;
     }
 
+        .left button{
+            width: 80%;
+        }
 }
