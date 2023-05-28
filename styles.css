@@ -43,12 +43,20 @@ main{
     background-color:var(--cyan);
     color: white;
     padding-bottom: 1.7rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    
+
 }
 
 .left span:first-of-type{
     font-size: 2rem;
-    margin-right: 0.4rem;
+    margin-right: 0.4rem;  
+    
+   
 }
+
 
 .left span:last-of-type{
     color:#e6ffff;
@@ -70,13 +78,16 @@ main{
 .right{
     background-color:var(--lighter-cyan);
     color: white;
+    padding-left: 3rem;
 }
 
 .right ul{
     list-style: none;
     line-height: 1.4;
     color:#e6ffff;
+    padding: 0;
 }
+
 
 h1{
     font-size: 1.5rem;
